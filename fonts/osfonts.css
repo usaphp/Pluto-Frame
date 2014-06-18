@@ -1,0 +1,61 @@
+@font-face {
+	font-family: 'osfonts';
+	src:url('osfonts.eot?-an3yyy');
+	src:url('osfonts.eot?#iefix-an3yyy') format('embedded-opentype'),
+		url('osfonts.woff?-an3yyy') format('woff'),
+		url('osfonts.ttf?-an3yyy') format('truetype'),
+		url('osfonts.svg?-an3yyy#osfonts') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="os-icon-"], [class*=" os-icon-"] {
+	font-family: 'osfonts';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.os-icon-angle-down:before {
+	content: "\f107";
+}
+.os-icon-thin-495_paint_brush_tool_color:before {
+	content: "\e655";
+}
+.os-icon-thin-339_window_layout_side_article_columns:before {
+	content: "\e6f1";
+}
+.os-icon-thin-338_window_layout_side_menus_columns:before {
+	content: "\e6f2";
+}
+.os-icon-thin-337_window_layout_side_menu:before {
+	content: "\e6f3";
+}
+.os-icon-thin-255_checkbox_x_checked_no:before {
+	content: "\e745";
+}
+.os-icon-thin-215_support_help_rescue:before {
+	content: "\e76d";
+}
+.os-icon-thin-136_shopping_cart_store_basket_purchase:before {
+	content: "\e7bc";
+}
+.os-icon-thin-063_paper_document_file_word:before {
+	content: "\e805";
+}
+.os-icon-thin-053_settings_gear_preferences:before {
+	content: "\e80f";
+}
+.os-icon-thin-052_settings_eq_control_panel_preferences:before {
+	content: "\e810";
+}
+.os-icon-thin-011_mail_envelope_email_postcard:before {
+	content: "\e839";
+}
