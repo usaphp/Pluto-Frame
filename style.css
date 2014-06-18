@@ -195,6 +195,7 @@ body.phone iframe {
     display: none; } }
 .customize-trigger i {
   color: #ffe102 !important;
+  display: inline-block;
   -webkit-animation-name: spin;
   -webkit-animation-duration: 2000ms;
   -webkit-animation-iteration-count: infinite;
@@ -211,6 +212,8 @@ body.phone iframe {
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
+.customize-trigger span {
+  display: inline-block; }
 
 @-ms-keyframes spin {
   from {
@@ -236,3 +239,35 @@ body.phone iframe {
 
   to {
     transform: rotate(360deg); } }
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px); }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px); } }
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake; }

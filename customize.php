@@ -8,4 +8,8 @@ if(isset($_GET['menu'])){
   if(session_id() == '') session_start();
   $_SESSION['menu_position'] = $_GET['menu'];
 }
-header("Location: /frame/frame.php");
+if(isset($_GET['no_frame'])){
+  header("Location: /");
+}else{
+  header("Location: /frame/frame.php");
+}
