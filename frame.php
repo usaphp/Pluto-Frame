@@ -58,9 +58,9 @@
           </select>
         </div>
       </div>
-      <div class="button-w"><a href="mailto:tamik@soziev.com" class="btn"><i class="os-icon-thin-215_support_help_rescue"></i> <span>Ask Question</span></a></div>
-      <div class="button-w"><a href="http://usaphp.github.io/wp-pluto-docs/readme.html" class="btn btn-documentation" target="_blank"><i class="os-icon-thin-063_paper_document_file_word"></i> <span>Documentation</span></a></div>
-      <div class="button-w"><a href="/frame/purchase.php" class="btn purchase"><i class="os-icon-thin-136_shopping_cart_store_basket_purchase"></i> <span>Purchase</span></a></div>
+      <div class="button-w btn-ask"><a href="mailto:tamik@soziev.com" class="btn"><i class="os-icon-thin-215_support_help_rescue"></i> <span>Ask Question</span></a></div>
+      <div class="button-w btn-documentation"><a href="http://usaphp.github.io/wp-pluto-docs/readme.html" class="btn" target="_blank"><i class="os-icon-thin-063_paper_document_file_word"></i> <span>Documentation</span></a></div>
+      <div class="button-w btn-purchase"><a href="/frame/purchase.php" class="btn"><i class="os-icon-thin-136_shopping_cart_store_basket_purchase"></i> <span>Purchase</span></a></div>
     </div>
   </div>
   <div class="iframe-wrap">

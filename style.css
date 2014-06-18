@@ -58,7 +58,7 @@ a {
       float: left;
       position: relative;
       margin-right: 20px;
-      border-right: 1px solid #535356;
+      border-right: 1px solid #454547;
       padding-right: 20px; }
       #themeControlBar .buttons-w .button-w:last-child {
         border-right: none; }
@@ -151,33 +151,10 @@ a {
     line-height: 24px; }
   #themeControlBar a.btn i {
     vertical-align: middle;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
-    margin-right: 10px; }
-  #themeControlBar a.btn.purchase {
-    color: #F9F5C0; }
-  #themeControlBar a.btn:hover {
+    margin-right: 10px;
     color: #fff; }
-
-.remove-frame {
-  float: right;
-  margin-right: 5px;
-  border-right: 1px solid #535356;
-  padding-right: 30px;
-  line-height: 18px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-right: 20px; }
-  .remove-frame a {
-    color: #B2B2B7;
-    text-decoration: none; }
-    .remove-frame a i {
-      color: #fff;
-      margin-right: 8px;
-      font-size: 18px;
-      vertical-align: middle; }
-    .remove-frame a span {
-      vertical-align: middle; }
 
 .iframe-wrap {
   position: absolute;
@@ -205,15 +182,19 @@ body.phone iframe {
   margin-left: -200px; }
 
 @media (max-width: 767px) {
-  .colors {
+  .buttons-w {
     display: none; }
 
   .remove-frame {
+    display: none; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  .btn-documentation {
     display: none; }
 
-  #themeControlBar a.btn-documentation {
+  .btn-ask {
     display: none; } }
 .customize-trigger i {
+  color: #ffe102 !important;
   -webkit-animation-name: spin;
   -webkit-animation-duration: 2000ms;
   -webkit-animation-iteration-count: infinite;
