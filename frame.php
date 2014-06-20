@@ -40,7 +40,7 @@
     <div class="buttons-w">
       <div class="button-w"><a href="/" class="btn"><i class="os-icon-thin-255_checkbox_x_checked_no"></i> <span>Remove Frame</span></a></div>
       <div class="button-w">
-        <a href="#" class="btn btn-settings customize-trigger" target="_blank"><i class="os-icon-thin-053_settings_gear_preferences"></i> <span class="animated infinite shake">Customize</span></a>
+        <a href="#" class="btn btn-settings customize-trigger" target="_blank"><i class="os-icon-thin-053_settings_gear_preferences"></i> <span>Customize</span></a>
 
         <div class="customize-w">
           <div class="tiparrow"></div>
