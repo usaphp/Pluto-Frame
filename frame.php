@@ -15,7 +15,7 @@
   if(isset($_SESSION['navigation_type'])){
     $navigation_type = $_SESSION['navigation_type'];
   }else{
-    $navigation_type = 'infinite';
+    $navigation_type = 'classic';
   }
 
   function active_color_class($color, $current_color){
@@ -64,7 +64,7 @@
             <option value="/frame/customize.php?menu=right" <?php if($menu_position == 'right') echo "selected" ?>>Right</option>
             <option value="/frame/customize.php?menu=top" <?php if($menu_position == 'top') echo "selected" ?>>Top</option>
           </select>
-          <h3>Navigation Type:</h3>
+          <h3>Pagination Type:</h3>
           <select name="#" id="navigation_type_select">
             <option value="/frame/customize.php?navigation_type=infinite" <?php if($navigation_type == 'infinite') echo "selected" ?>>Infinite Scroll</option>
             <option value="/frame/customize.php?navigation_type=classic" <?php if($navigation_type == 'classic') echo "selected" ?>>Classic Pagination</option>
