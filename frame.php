@@ -12,6 +12,12 @@
     $menu_position = 'left';
   }
 
+  if(isset($_SESSION['navigation_type'])){
+    $navigation_type = $_SESSION['navigation_type'];
+  }else{
+    $navigation_type = 'infinite';
+  }
+
   function active_color_class($color, $current_color){
     if($color == $current_color){
       return 'active';
@@ -38,8 +44,8 @@
       <i class="os-icon-angle-down"></i>
     </a>
     <div class="buttons-w">
-      <div class="button-w"><a href="/" class="btn"><i class="os-icon-thin-255_checkbox_x_checked_no"></i> <span>Remove Frame</span></a></div>
-      <div class="button-w">
+      <div class="button-w btn-remove-frame"><a href="/" class="btn"><i class="os-icon-thin-255_checkbox_x_checked_no"></i> <span>Remove Frame</span></a></div>
+      <div class="button-w btn-customize">
         <a href="#" class="btn btn-settings customize-trigger" target="_blank"><i class="os-icon-thin-053_settings_gear_preferences"></i> <span>Customize</span></a>
 
         <div class="customize-w">
@@ -58,6 +64,11 @@
             <option value="/frame/customize.php?menu=right" <?php if($menu_position == 'right') echo "selected" ?>>Right</option>
             <option value="/frame/customize.php?menu=top" <?php if($menu_position == 'top') echo "selected" ?>>Top</option>
           </select>
+          <h3>Navigation Type:</h3>
+          <select name="#" id="navigation_type_select">
+            <option value="/frame/customize.php?navigation_type=infinite" <?php if($navigation_type == 'infinite') echo "selected" ?>>Infinite Scroll</option>
+            <option value="/frame/customize.php?navigation_type=classic" <?php if($navigation_type == 'classic') echo "selected" ?>>Classic Pagination</option>
+          </select>
         </div>
       </div>
       <div class="button-w btn-ask"><a href="mailto:tamik@soziev.com" class="btn"><i class="os-icon-thin-215_support_help_rescue"></i> <span>Ask Question</span></a></div>
@@ -71,6 +82,10 @@
   <script>
     $(function() {
       $('#menu_position_select').change(function(){
+        window.location = $(this).find(':selected').val();
+        return false;
+      });
+      $('#navigation_type_select').change(function(){
         window.location = $(this).find(':selected').val();
         return false;
       });
