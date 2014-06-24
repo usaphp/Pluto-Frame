@@ -33,7 +33,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link href='/frame/fonts/osfonts.css' rel='stylesheet' type='text/css'>
-  <link href='/frame/style.css?ver=2' rel='stylesheet' type='text/css'>
+  <link href='/frame/style.css?ver=3' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <title>Premium Wordpress Themes</title>
 </head>
