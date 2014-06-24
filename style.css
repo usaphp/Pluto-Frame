@@ -66,8 +66,8 @@ a {
 .customize-w {
   position: absolute;
   background-color: #fff;
-  width: 200px;
-  left: -100px;
+  width: 250px;
+  left: -125px;
   top: 40px;
   color: #111;
   padding: 40px;
@@ -143,6 +143,10 @@ a {
     background-color: #c47178; }
   .customize-w .color.color-four .color2 {
     background-color: #f2f0e7; }
+  .customize-w .color.color-five .color1 {
+    background-color: #D3C8B4; }
+  .customize-w .color.color-five .color2 {
+    background-color: #703E3B; }
   .customize-w .customize-block {
     margin-bottom: 40px; }
 

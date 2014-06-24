@@ -57,6 +57,7 @@
             <a href="/frame/customize.php?color=blue_sky" class="color color-two <?php echo active_color_class('blue_sky', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a>
             <a href="/frame/customize.php?color=dark_night" class="color color-three <?php echo active_color_class('dark_night', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a>
             <a href="/frame/customize.php?color=pinkman" class="color color-four <?php echo active_color_class('pinkman', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a>
+            <a href="/frame/customize.php?color=space" class="color color-five <?php echo active_color_class('space', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a>
           </div>
           <h3>Menu Position:</h3>
           <select name="#" id="menu_position_select">

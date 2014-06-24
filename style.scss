@@ -75,8 +75,8 @@ a {
 .customize-w {
   position: absolute;
   background-color: #fff;
-  width: 200px;
-  left: -100px;
+  width: 250px;
+  left: -125px;
   top: 40px;
   color: #111;
   padding: 40px;
@@ -175,6 +175,12 @@ a {
   }
   .color.color-four .color2 {
     background-color: #f2f0e7;
+  }
+  .color.color-five .color1 {
+    background-color: #D3C8B4;
+  }
+  .color.color-five .color2 {
+    background-color: #703E3B;
   }
 
   .customize-block {
