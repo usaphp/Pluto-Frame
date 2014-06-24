@@ -33,7 +33,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link href='/frame/fonts/osfonts.css' rel='stylesheet' type='text/css'>
-  <link href='/frame/style.css?ver=3' rel='stylesheet' type='text/css'>
+  <link href='/frame/style.css?ver=4' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <title>Premium Wordpress Themes</title>
 </head>
@@ -52,13 +52,13 @@
           <div class="tiparrow"></div>
           <i class="os-icon-thin-255_checkbox_x_checked_no close-customizer"></i>
           <h3>Color Scheme:</h3>
-          <div class="customize-block colors">
-            <a href="/frame/customize.php?color=black_and_white" class="color color-one <?php echo active_color_class('black_and_white', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a>
-            <a href="/frame/customize.php?color=blue_sky" class="color color-two <?php echo active_color_class('blue_sky', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a>
-            <a href="/frame/customize.php?color=dark_night" class="color color-three <?php echo active_color_class('dark_night', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a>
-            <a href="/frame/customize.php?color=pinkman" class="color color-four <?php echo active_color_class('pinkman', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a>
-            <a href="/frame/customize.php?color=space" class="color color-five <?php echo active_color_class('space', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a>
-          </div>
+          <ul class="customize-block colors">
+            <li><a href="/frame/customize.php?color=black_and_white" class="color color-one <?php echo active_color_class('black_and_white', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
+            <li><a href="/frame/customize.php?color=blue_sky" class="color color-two <?php echo active_color_class('blue_sky', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
+            <li><a href="/frame/customize.php?color=dark_night" class="color color-three <?php echo active_color_class('dark_night', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
+            <li><a href="/frame/customize.php?color=pinkman" class="color color-four <?php echo active_color_class('pinkman', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
+            <li><a href="/frame/customize.php?color=space" class="color color-five <?php echo active_color_class('space', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a><span class="label">new</span></li>
+          </ul>
           <h3>Menu Position:</h3>
           <select name="#" id="menu_position_select">
             <option value="/frame/customize.php?menu=left" <?php if($menu_position == 'left') echo "selected" ?>>Left</option>
@@ -70,6 +70,7 @@
             <option value="/frame/customize.php?navigation_type=infinite" <?php if($navigation_type == 'infinite') echo "selected" ?>>Infinite Scroll</option>
             <option value="/frame/customize.php?navigation_type=classic" <?php if($navigation_type == 'classic') echo "selected" ?>>Classic Pagination</option>
           </select>
+          <div class="tip"><i class="os-icon-thin-052_settings_eq_control_panel_preferences"></i> More color settings available in admin</div>
         </div>
       </div>
       <div class="button-w btn-ask"><a href="mailto:tamik@soziev.com" class="btn"><i class="os-icon-thin-215_support_help_rescue"></i> <span>Ask Question</span></a></div>
