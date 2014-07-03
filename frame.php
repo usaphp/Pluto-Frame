@@ -83,6 +83,10 @@
   </div>
   <script>
     $(function() {
+      $('#previewIframe').css('opacity', '0');
+      window.setTimeout(function(){
+        $('#previewIframe').animate({opacity: 1}, 800);
+      }, 4000);
       $('#menu_position_select').change(function(){
         window.location = $(this).find(':selected').val();
         return false;
