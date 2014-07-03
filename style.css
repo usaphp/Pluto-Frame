@@ -151,7 +151,7 @@ a {
   .customize-w .color span {
     float: left;
     display: block;
-    width: 14px;
+    width: 10px;
     height: 20px; }
   .customize-w .color.active, .customize-w .color:hover {
     box-shadow: 0px 0px 4px 4px #53B7ED; }
@@ -179,6 +179,10 @@ a {
     background-color: #D3C8B4; }
   .customize-w .color.color-five .color2 {
     background-color: #703E3B; }
+  .customize-w .color.color-six .color1 {
+    background-color: #ddd; }
+  .customize-w .color.color-six .color2 {
+    background-color: #00e7b4; }
 
 #themeControlBar a.btn {
   display: inline-block;

@@ -172,7 +172,7 @@ a {
   .color span {
     float: left;
     display: block;
-    width: 14px;
+    width: 10px;
     height: 20px;
   }
   .color.active, .color:hover {
@@ -213,6 +213,12 @@ a {
   }
   .color.color-five .color2 {
     background-color: #703E3B;
+  }
+  .color.color-six .color1 {
+    background-color: #ddd;
+  }
+  .color.color-six .color2 {
+    background-color: #00e7b4;
   }
 
 }
