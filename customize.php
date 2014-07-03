@@ -12,6 +12,10 @@ if(isset($_GET['navigation_type'])){
   if(session_id() == '') session_start();
   $_SESSION['navigation_type'] = $_GET['navigation_type'];
 }
+if(isset($_GET['show_sidebar_on_masonry'])){
+  if(session_id() == '') session_start();
+  $_SESSION['show_sidebar_on_masonry'] = $_GET['show_sidebar_on_masonry'];
+}
 if(isset($_GET['no_frame'])){
   header("Location: /");
 }else{

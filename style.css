@@ -221,7 +221,7 @@ body.phone iframe {
   left: 50%;
   margin-left: -200px; }
 
-#menu_position_select {
+#menu_position_select, #navigation_type_select {
   margin-bottom: 30px; }
 
 @media (max-width: 767px) {

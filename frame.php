@@ -18,6 +18,12 @@
     $navigation_type = 'classic';
   }
 
+  if(isset($_SESSION['show_sidebar_on_masonry'])){
+    $show_sidebar_on_masonry = $_SESSION['show_sidebar_on_masonry'];
+  }else{
+    $show_sidebar_on_masonry = "no";
+  }
+
   function active_color_class($color, $current_color){
     if($color == $current_color){
       return 'active';
@@ -33,7 +39,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link href='/frame/fonts/osfonts.css' rel='stylesheet' type='text/css'>
-  <link href='/frame/style.css?ver=4' rel='stylesheet' type='text/css'>
+  <link href='/frame/style.css?ver=5' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <title>Premium Wordpress Themes</title>
 </head>
@@ -70,6 +76,11 @@
             <option value="/frame/customize.php?navigation_type=infinite" <?php if($navigation_type == 'infinite') echo "selected" ?>>Infinite Scroll</option>
             <option value="/frame/customize.php?navigation_type=classic" <?php if($navigation_type == 'classic') echo "selected" ?>>Classic Pagination</option>
           </select>
+          <h3>Show Sidebar on Homepage:</h3>
+          <select name="#" id="sidebar_on_homepage_select">
+            <option value="/frame/customize.php?show_sidebar_on_masonry=no" <?php if($show_sidebar_on_masonry == 'no') echo "selected" ?>>No</option>
+            <option value="/frame/customize.php?show_sidebar_on_masonry=yes" <?php if($show_sidebar_on_masonry == 'yes') echo "selected" ?>>Yes</option>
+          </select>
           <div class="tip"><i class="os-icon-thin-052_settings_eq_control_panel_preferences"></i> More color settings available in admin</div>
         </div>
       </div>
@@ -86,12 +97,16 @@
       $('#previewIframe').css('opacity', '0');
       window.setTimeout(function(){
         $('#previewIframe').animate({opacity: 1}, 800);
-      }, 4000);
+      }, 3000);
       $('#menu_position_select').change(function(){
         window.location = $(this).find(':selected').val();
         return false;
       });
       $('#navigation_type_select').change(function(){
+        window.location = $(this).find(':selected').val();
+        return false;
+      });
+      $('#sidebar_on_homepage_select').change(function(){
         window.location = $(this).find(':selected').val();
         return false;
       });
