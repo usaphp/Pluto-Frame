@@ -235,6 +235,14 @@ a {
       background-color: #9e8998;
     }
   }
+  .color.color-eight {
+    .color1 {
+      background-color: #fff;
+    }
+    .color2 {
+      background-color: #eee;
+    }
+  }
 }
 
 #themeControlBar a.btn {
@@ -289,6 +297,16 @@ body.phone {
 
 #menu_position_select, #navigation_type_select {
   margin-bottom: 30px;
+}
+
+.loading-label {
+  font-size: 10px;
+  line-height: 12px;
+  background-color: #E24653;
+  color: #fff;
+  padding: 2px 5px;
+  border-radius: 4px;
+  margin-left: 5px;
 }
 
 @media (max-width: 767px) {

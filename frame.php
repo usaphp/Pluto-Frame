@@ -39,7 +39,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link href='/frame/fonts/osfonts.css' rel='stylesheet' type='text/css'>
-  <link href='/frame/style.css?ver=7' rel='stylesheet' type='text/css'>
+  <link href='/frame/style.css?ver=8' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <title>Premium Wordpress Themes</title>
 </head>
@@ -66,6 +66,7 @@
             <li><a href="/frame/customize.php?color=pinkman" class="color color-four <?php echo active_color_class('pinkman', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li><a href="/frame/customize.php?color=space" class="color color-five <?php echo active_color_class('space', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li><a href="/frame/customize.php?color=grey_clouds" class="color color-six <?php echo active_color_class('grey_clouds', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
+            <li class="last-in-row"><a href="/frame/customize.php?color=clear_white" class="color color-eight <?php echo active_color_class('clear_white', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
           </ul>
           <h3>Menu Position:</h3>
           <select name="#" id="menu_position_select">
@@ -97,14 +98,17 @@
   <script>
     $(function() {
       $('#menu_position_select').change(function(){
+        $(this).prev('h3').append('<span class="loading-label">Loading...</span>');
         window.location = $(this).find(':selected').val();
         return false;
       });
       $('#navigation_type_select').change(function(){
+        $(this).prev('h3').append('<span class="loading-label">Loading...</span>');
         window.location = $(this).find(':selected').val();
         return false;
       });
       $('#sidebar_on_homepage_select').change(function(){
+        $(this).prev('h3').append('<span class="loading-label">Loading...</span>');
         window.location = $(this).find(':selected').val();
         return false;
       });
