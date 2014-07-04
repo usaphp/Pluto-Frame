@@ -80,6 +80,7 @@ a {
   top: 40px;
   color: #111;
   padding: 40px;
+  padding-top: 30px;
   border-radius: 4px;
   box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.7);
   display: none;
@@ -146,7 +147,9 @@ a {
     text-align: center;
     li {
       float: left;
-      margin-right: 15px;
+      margin-right: 18px;
+      position: relative;
+      margin-bottom: 15px;
       .label {
         background-color: #ED4C49;
         font-weight: bold;
@@ -154,8 +157,12 @@ a {
         padding: 0px 3px;
         border-radius: 4px;
         font-size: 12px;
+        line-height: 14px;
+        position: absolute;
+        top: -5px;
+        left: 10px;
       }
-      &:last-child {
+      &.last-in-row {
         margin-right: 0px;
       }
     }
@@ -164,25 +171,24 @@ a {
     @include clearfix;
     display: block;
     line-height: 34px;
-    border-radius: 4px;
-    border: 1px solid #111;
+    border-radius: 20px;
+    border: 1px solid #222;
     padding: 3px;
-    margin-bottom: 3px;
   }
   .color span {
     float: left;
     display: block;
-    width: 10px;
+    width: 20px;
     height: 20px;
   }
   .color.active, .color:hover {
     box-shadow: 0px 0px 4px 4px #53B7ED;
   }
   .color1 {
-    border-radius: 2px 0px 0px 2px;
+    border-radius: 20px 0px 0px 20px;
   }
   .color2 {
-    border-radius: 0px 2px 2px 0px;
+    border-radius: 0px 20px 20px 0px;
   }
   .color.color-one .color1 {
     background-color: #fff;
@@ -221,6 +227,14 @@ a {
     background-color: #00e7b4;
   }
 
+  .color.color-seven {
+    .color1 {
+      background-color: #F4E8C1;
+    }
+    .color2 {
+      background-color: #9e8998;
+    }
+  }
 }
 
 #themeControlBar a.btn {

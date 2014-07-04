@@ -71,6 +71,7 @@ a {
   top: 40px;
   color: #111;
   padding: 40px;
+  padding-top: 30px;
   border-radius: 4px;
   box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.7);
   display: none; }
@@ -127,23 +128,28 @@ a {
       clear: both; }
     .customize-w .customize-block.colors li {
       float: left;
-      margin-right: 15px; }
+      margin-right: 18px;
+      position: relative;
+      margin-bottom: 15px; }
       .customize-w .customize-block.colors li .label {
         background-color: #ED4C49;
         font-weight: bold;
         color: #fff;
         padding: 0px 3px;
         border-radius: 4px;
-        font-size: 12px; }
-      .customize-w .customize-block.colors li:last-child {
+        font-size: 12px;
+        line-height: 14px;
+        position: absolute;
+        top: -5px;
+        left: 10px; }
+      .customize-w .customize-block.colors li.last-in-row {
         margin-right: 0px; }
   .customize-w .color {
     display: block;
     line-height: 34px;
-    border-radius: 4px;
-    border: 1px solid #111;
-    padding: 3px;
-    margin-bottom: 3px; }
+    border-radius: 20px;
+    border: 1px solid #222;
+    padding: 3px; }
     .customize-w .color:after {
       content: "";
       display: table;
@@ -151,14 +157,14 @@ a {
   .customize-w .color span {
     float: left;
     display: block;
-    width: 10px;
+    width: 20px;
     height: 20px; }
   .customize-w .color.active, .customize-w .color:hover {
     box-shadow: 0px 0px 4px 4px #53B7ED; }
   .customize-w .color1 {
-    border-radius: 2px 0px 0px 2px; }
+    border-radius: 20px 0px 0px 20px; }
   .customize-w .color2 {
-    border-radius: 0px 2px 2px 0px; }
+    border-radius: 0px 20px 20px 0px; }
   .customize-w .color.color-one .color1 {
     background-color: #fff; }
   .customize-w .color.color-one .color2 {
@@ -183,6 +189,10 @@ a {
     background-color: #ddd; }
   .customize-w .color.color-six .color2 {
     background-color: #00e7b4; }
+  .customize-w .color.color-seven .color1 {
+    background-color: #F4E8C1; }
+  .customize-w .color.color-seven .color2 {
+    background-color: #9e8998; }
 
 #themeControlBar a.btn {
   display: inline-block;
