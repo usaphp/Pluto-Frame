@@ -24,6 +24,12 @@
     $show_sidebar_on_masonry = "no";
   }
 
+  if(isset($_SESSION['use_fixed_height_index_posts'])){
+    $use_fixed_height_index_posts = $_SESSION['use_fixed_height_index_posts'];
+  }else{
+    $use_fixed_height_index_posts = "no";
+  }
+
   function active_color_class($color, $current_color){
     if($color == $current_color){
       return 'active';

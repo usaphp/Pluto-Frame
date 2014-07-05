@@ -16,6 +16,10 @@ if(isset($_GET['show_sidebar_on_masonry'])){
   if(session_id() == '') session_start();
   $_SESSION['show_sidebar_on_masonry'] = $_GET['show_sidebar_on_masonry'];
 }
+if(isset($_GET['use_fixed_height_index_posts'])){
+  if(session_id() == '') session_start();
+  $_SESSION['use_fixed_height_index_posts'] = $_GET['use_fixed_height_index_posts'];
+}
 if(isset($_GET['no_frame'])){
   header("Location: /");
 }else{
