@@ -22,7 +22,7 @@ if(isset($_GET['use_fixed_height_index_posts'])){
 }
 if(isset($_GET['show_featured_posts'])){
   if(session_id() == '') session_start();
-  $_SESSION['show_featured_posts_on_index'] = $_GET['show_featured_posts_on_index'];
+  $_SESSION['show_featured_posts_on_index'] = $_GET['show_featured_posts'];
 }
 if(isset($_GET['no_frame'])){
   header("Location: /");
