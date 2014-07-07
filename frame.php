@@ -51,7 +51,7 @@
 </head>
 <body>
   <div id="themeControlBar">
-    <a href="http://pinsupreme.com/?source=from_pluto" class="logo-w">
+    <a href="http://188.226.187.7/?source=from_pluto" class="logo-w">
       Pluto <span>wordpress</span>
       <i class="os-icon-angle-down"></i>
     </a>
