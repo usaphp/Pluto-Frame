@@ -85,7 +85,7 @@
             <option value="/frame/customize.php?navigation_type=infinite" <?php if($navigation_type == 'infinite') echo "selected" ?>>Infinite Scroll</option>
             <option value="/frame/customize.php?navigation_type=infinite_button" <?php if($navigation_type == 'infinite_button') echo "selected" ?>>Infinite with Button</option>
             <option value="/frame/customize.php?navigation_type=classic" <?php if($navigation_type == 'classic') echo "selected" ?>>Paginated Links</option>
-            <option value="/frame/customize.php?navigation_type=default" <?php if($navigation_type == 'default') echo "selected" ?>>Default Newer/Older</option>
+            <option value="/frame/customize.php?navigation_type=default" <?php if($navigation_type == 'default') echo "selected" ?>>Default Next/Previous</option>
           </select>
           <h3>Show Sidebar on Homepage:</h3>
           <select name="#" id="sidebar_on_homepage_select">
