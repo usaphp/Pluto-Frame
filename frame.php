@@ -70,7 +70,7 @@
             <li><a href="/frame/customize.php?color=dark_night" class="color color-three <?php echo active_color_class('dark_night', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li class="last-in-row"><a href="/frame/customize.php?color=almond_milk" class="color color-seven <?php echo active_color_class('almond_milk', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a><span class="label">new</span></li>
             <li><a href="/frame/customize.php?color=pinkman" class="color color-four <?php echo active_color_class('pinkman', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
-            <li><a href="/frame/customize.php?color=space" class="color color-five <?php echo active_color_class('space', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
+            <li><a href="/frame/customize.php?color=sakura" class="color color-five <?php echo active_color_class('sakura', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li><a href="/frame/customize.php?color=grey_clouds" class="color color-six <?php echo active_color_class('grey_clouds', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li class="last-in-row"><a href="/frame/customize.php?color=clear_white" class="color color-eight <?php echo active_color_class('clear_white', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
           </ul>
@@ -83,7 +83,9 @@
           <h3>Pagination Type:</h3>
           <select name="#" id="navigation_type_select">
             <option value="/frame/customize.php?navigation_type=infinite" <?php if($navigation_type == 'infinite') echo "selected" ?>>Infinite Scroll</option>
-            <option value="/frame/customize.php?navigation_type=classic" <?php if($navigation_type == 'classic') echo "selected" ?>>Classic Pagination</option>
+            <option value="/frame/customize.php?navigation_type=infinite_button" <?php if($navigation_type == 'infinite_button') echo "selected" ?>>Infinite with Button</option>
+            <option value="/frame/customize.php?navigation_type=classic" <?php if($navigation_type == 'classic') echo "selected" ?>>Paginated Links</option>
+            <option value="/frame/customize.php?navigation_type=default" <?php if($navigation_type == 'default') echo "selected" ?>>Default Newer/Older</option>
           </select>
           <h3>Show Sidebar on Homepage:</h3>
           <select name="#" id="sidebar_on_homepage_select">
