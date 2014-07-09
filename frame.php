@@ -15,7 +15,7 @@
   if(isset($_SESSION['navigation_type'])){
     $navigation_type = $_SESSION['navigation_type'];
   }else{
-    $navigation_type = 'infinite';
+    $navigation_type = 'infinite_button';
   }
 
   if(isset($_SESSION['show_sidebar_on_masonry'])){
