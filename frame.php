@@ -12,6 +12,12 @@
     $menu_position = 'left';
   }
 
+  if(isset($_SESSION['menu_style'])){
+    $menu_style = $_SESSION['menu_style'];
+  }else{
+    $menu_style = 'v2';
+  }
+
   if(isset($_SESSION['navigation_type'])){
     $navigation_type = $_SESSION['navigation_type'];
   }else{
@@ -78,7 +84,8 @@
           <select name="#" id="menu_position_select">
             <option value="/frame/customize.php?menu=left" <?php if($menu_position == 'left') echo "selected" ?>>Left</option>
             <option value="/frame/customize.php?menu=right" <?php if($menu_position == 'right') echo "selected" ?>>Right</option>
-            <option value="/frame/customize.php?menu=top" <?php if($menu_position == 'top') echo "selected" ?>>Top</option>
+            <option value="/frame/customize.php?menu=top&menu_style=v1" <?php if($menu_position == 'top' && $menu_style == 'v1') echo "selected" ?>>Top Big</option>
+            <option value="/frame/customize.php?menu=top&menu_style=v2" <?php if($menu_position == 'top' && $menu_style == 'v2') echo "selected" ?>>Top Compact &amp; Fixed</option>
           </select>
           <h3>Pagination Type:</h3>
           <select name="#" id="navigation_type_select">

@@ -8,6 +8,10 @@ if(isset($_GET['menu'])){
   if(session_id() == '') session_start();
   $_SESSION['menu_position'] = $_GET['menu'];
 }
+if(isset($_GET['menu_style'])){
+  if(session_id() == '') session_start();
+  $_SESSION['menu_style'] = $_GET['menu_style'];
+}
 if(isset($_GET['navigation_type'])){
   if(session_id() == '') session_start();
   $_SESSION['navigation_type'] = $_GET['navigation_type'];
