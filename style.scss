@@ -18,6 +18,13 @@ body {
 a {
   color: #2c6481;
 }
+
+*,*:before,*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 #themeControlBar {
   background-color: #222326;
   color: #DEDEE0;
@@ -75,8 +82,8 @@ a {
 .customize-w {
   position: absolute;
   background-color: #fff;
-  width: 250px;
-  left: -125px;
+  width: 400px;
+  left: -200px;
   top: 40px;
   color: #111;
   padding: 40px;
@@ -244,6 +251,33 @@ a {
       background-color: #eee;
     }
   }
+  .color.color-nine {
+    .color1 {
+      background-color: #B3CFE2;
+    }
+    .color2 {
+      background-color: #5E7C96;
+    }
+  }
+  .color.color-ten {
+    .color1 {
+      background-color: #fa6900;
+    }
+    .color2 {
+      background-color: #a7dbd8;
+    }
+  }
+}
+
+.row {
+  @include clearfix;
+  margin: 0px -10px;
+}
+
+.col-half {
+  width: 50%;
+  float: left;
+  padding: 0px 10px;
 }
 
 #themeControlBar a.btn {

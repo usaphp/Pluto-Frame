@@ -30,6 +30,12 @@
     $show_sidebar_on_masonry = "no";
   }
 
+  if(isset($_SESSION['show_featured_posts_on_index'])){
+    $show_featured_posts = $_SESSION['show_featured_posts_on_index'];
+  }else{
+    $show_featured_posts = "no";
+  }
+
   if(isset($_SESSION['use_fixed_height_index_posts'])){
     $use_fixed_height_index_posts = $_SESSION['use_fixed_height_index_posts'];
   }else{
@@ -51,7 +57,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link href='/frame/fonts/osfonts.css' rel='stylesheet' type='text/css'>
-  <link href='/frame/style.css?ver=9' rel='stylesheet' type='text/css'>
+  <link href='/frame/style.css?ver=10' rel='stylesheet' type='text/css'>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <title>Premium Wordpress Themes</title>
 </head>
@@ -74,31 +80,50 @@
             <li><a href="/frame/customize.php?color=black_and_white" class="color color-one <?php echo active_color_class('black_and_white', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li><a href="/frame/customize.php?color=blue_sky" class="color color-two <?php echo active_color_class('blue_sky', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li><a href="/frame/customize.php?color=dark_night" class="color color-three <?php echo active_color_class('dark_night', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
+            <li><a href="/frame/customize.php?color=mighty_slate" class="color color-nine <?php echo active_color_class('mighty_slate', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a><span class="label">new</span></li>
             <li class="last-in-row"><a href="/frame/customize.php?color=almond_milk" class="color color-seven <?php echo active_color_class('almond_milk', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a><span class="label">new</span></li>
             <li><a href="/frame/customize.php?color=pinkman" class="color color-four <?php echo active_color_class('pinkman', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
-            <li><a href="/frame/customize.php?color=sakura" class="color color-five <?php echo active_color_class('sakura', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
+            <li><a href="/frame/customize.php?color=sakura" class="color color-five <?php echo active_color_class('sakura', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a><span class="label">new</span></li>
             <li><a href="/frame/customize.php?color=grey_clouds" class="color color-six <?php echo active_color_class('grey_clouds', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
-            <li class="last-in-row"><a href="/frame/customize.php?color=clear_white" class="color color-eight <?php echo active_color_class('clear_white', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
+            <li><a href="/frame/customize.php?color=clear_white" class="color color-eight <?php echo active_color_class('clear_white', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
+            <li class="last-in-row"><a href="/frame/customize.php?color=retro_orange" class="color color-ten <?php echo active_color_class('retro_orange', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
           </ul>
-          <h3>Menu Position:</h3>
-          <select name="#" id="menu_position_select">
-            <option value="/frame/customize.php?menu=left" <?php if($menu_position == 'left') echo "selected" ?>>Left</option>
-            <option value="/frame/customize.php?menu=right" <?php if($menu_position == 'right') echo "selected" ?>>Right</option>
-            <option value="/frame/customize.php?menu=top&menu_style=v1" <?php if($menu_position == 'top' && $menu_style == 'v1') echo "selected" ?>>Top Big</option>
-            <option value="/frame/customize.php?menu=top&menu_style=v2" <?php if($menu_position == 'top' && $menu_style == 'v2') echo "selected" ?>>Top Compact &amp; Fixed</option>
-          </select>
-          <h3>Pagination Type:</h3>
-          <select name="#" id="navigation_type_select">
-            <option value="/frame/customize.php?navigation_type=infinite" <?php if($navigation_type == 'infinite') echo "selected" ?>>Infinite Scroll</option>
-            <option value="/frame/customize.php?navigation_type=infinite_button" <?php if($navigation_type == 'infinite_button') echo "selected" ?>>Infinite with Button</option>
-            <option value="/frame/customize.php?navigation_type=classic" <?php if($navigation_type == 'classic') echo "selected" ?>>Paginated Links</option>
-            <option value="/frame/customize.php?navigation_type=default" <?php if($navigation_type == 'default') echo "selected" ?>>Default Next/Previous</option>
-          </select>
-          <h3>Show Sidebar on Homepage:</h3>
-          <select name="#" id="sidebar_on_homepage_select">
-            <option value="/frame/customize.php?show_sidebar_on_masonry=no" <?php if($show_sidebar_on_masonry == 'no') echo "selected" ?>>No</option>
-            <option value="/frame/customize.php?show_sidebar_on_masonry=yes" <?php if($show_sidebar_on_masonry == 'yes') echo "selected" ?>>Yes</option>
-          </select>
+          <div class="row">
+            <div class="col-half">
+              <h3>Menu Position:</h3>
+              <select name="#" id="menu_position_select">
+                <option value="/frame/customize.php?menu=left" <?php if($menu_position == 'left') echo "selected" ?>>Left</option>
+                <option value="/frame/customize.php?menu=right" <?php if($menu_position == 'right') echo "selected" ?>>Right</option>
+                <option value="/frame/customize.php?menu=top&menu_style=v1" <?php if($menu_position == 'top' && $menu_style == 'v1') echo "selected" ?>>Top Big</option>
+                <option value="/frame/customize.php?menu=top&menu_style=v2" <?php if($menu_position == 'top' && $menu_style == 'v2') echo "selected" ?>>Top Compact &amp; Fixed</option>
+              </select>
+            </div>
+            <div class="col-half">
+              <h3>Pagination Type:</h3>
+              <select name="#" id="navigation_type_select">
+                <option value="/frame/customize.php?navigation_type=infinite" <?php if($navigation_type == 'infinite') echo "selected" ?>>Infinite Scroll</option>
+                <option value="/frame/customize.php?navigation_type=infinite_button" <?php if($navigation_type == 'infinite_button') echo "selected" ?>>Infinite with Button</option>
+                <option value="/frame/customize.php?navigation_type=classic" <?php if($navigation_type == 'classic') echo "selected" ?>>Paginated Links</option>
+                <option value="/frame/customize.php?navigation_type=default" <?php if($navigation_type == 'default') echo "selected" ?>>Default Next/Previous</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-half">
+              <h3>Sidebar on Homepage:</h3>
+              <select name="#" id="sidebar_on_homepage_select">
+                <option value="/frame/customize.php?show_sidebar_on_masonry=no" <?php if($show_sidebar_on_masonry == 'no') echo "selected" ?>>No</option>
+                <option value="/frame/customize.php?show_sidebar_on_masonry=yes" <?php if($show_sidebar_on_masonry == 'yes') echo "selected" ?>>Yes</option>
+              </select>
+            </div>
+            <div class="col-half">
+              <h3>Featured Posts:</h3>
+              <select name="#" id="featured_posts_select">
+                <option value="/frame/customize.php?show_featured_posts=no" <?php if($show_featured_posts == 'no') echo "selected" ?>>No</option>
+                <option value="/frame/customize.php?show_featured_posts=yes" <?php if($show_featured_posts == 'yes') echo "selected" ?>>Yes</option>
+              </select>
+            </div>
+          </div>
           <div class="tip"><i class="os-icon-thin-052_settings_eq_control_panel_preferences"></i> More color settings available in admin</div>
         </div>
       </div>
@@ -123,6 +148,11 @@
         return false;
       });
       $('#sidebar_on_homepage_select').change(function(){
+        $(this).prev('h3').append('<span class="loading-label">Loading...</span>');
+        window.location = $(this).find(':selected').val();
+        return false;
+      });
+      $('#featured_posts_select').change(function(){
         $(this).prev('h3').append('<span class="loading-label">Loading...</span>');
         window.location = $(this).find(':selected').val();
         return false;

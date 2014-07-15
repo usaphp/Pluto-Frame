@@ -15,6 +15,11 @@ body {
 a {
   color: #2c6481; }
 
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 #themeControlBar {
   background-color: #222326;
   color: #DEDEE0;
@@ -66,8 +71,8 @@ a {
 .customize-w {
   position: absolute;
   background-color: #fff;
-  width: 250px;
-  left: -125px;
+  width: 400px;
+  left: -200px;
   top: 40px;
   color: #111;
   padding: 40px;
@@ -80,7 +85,8 @@ a {
     right: 10px;
     top: 10px;
     font-size: 14px;
-    color: #333; }
+    color: #333;
+    cursor: pointer; }
     .customize-w .close-customizer:hover {
       color: #108CCE; }
   .customize-w .tiparrow {
@@ -197,6 +203,26 @@ a {
     background-color: #fff; }
   .customize-w .color.color-eight .color2 {
     background-color: #eee; }
+  .customize-w .color.color-nine .color1 {
+    background-color: #B3CFE2; }
+  .customize-w .color.color-nine .color2 {
+    background-color: #5E7C96; }
+  .customize-w .color.color-ten .color1 {
+    background-color: #fa6900; }
+  .customize-w .color.color-ten .color2 {
+    background-color: #a7dbd8; }
+
+.row {
+  margin: 0px -10px; }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.col-half {
+  width: 50%;
+  float: left;
+  padding: 0px 10px; }
 
 #themeControlBar a.btn {
   display: inline-block;
