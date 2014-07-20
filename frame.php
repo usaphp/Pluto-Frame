@@ -77,13 +77,13 @@
           <i class="os-icon-thin-255_checkbox_x_checked_no close-customizer"></i>
           <h3>Color Scheme:</h3>
           <ul class="customize-block colors">
+            <li><a href="/frame/customize.php?color=blue_sky" class="color color-two <?php echo active_color_class('blue_sky', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a><span class="label">hot</span></li>
             <li><a href="/frame/customize.php?color=black_and_white" class="color color-one <?php echo active_color_class('black_and_white', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
-            <li><a href="/frame/customize.php?color=blue_sky" class="color color-two <?php echo active_color_class('blue_sky', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li><a href="/frame/customize.php?color=dark_night" class="color color-three <?php echo active_color_class('dark_night', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li><a href="/frame/customize.php?color=mighty_slate" class="color color-nine <?php echo active_color_class('mighty_slate', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a><span class="label">new</span></li>
             <li class="last-in-row"><a href="/frame/customize.php?color=almond_milk" class="color color-seven <?php echo active_color_class('almond_milk', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a><span class="label">new</span></li>
             <li><a href="/frame/customize.php?color=pinkman" class="color color-four <?php echo active_color_class('pinkman', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
-            <li><a href="/frame/customize.php?color=sakura" class="color color-five <?php echo active_color_class('sakura', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a><span class="label">new</span></li>
+            <li><a href="/frame/customize.php?color=sakura" class="color color-five <?php echo active_color_class('sakura', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li><a href="/frame/customize.php?color=grey_clouds" class="color color-six <?php echo active_color_class('grey_clouds', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li><a href="/frame/customize.php?color=clear_white" class="color color-eight <?php echo active_color_class('clear_white', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
             <li class="last-in-row"><a href="/frame/customize.php?color=retro_orange" class="color color-ten <?php echo active_color_class('retro_orange', $current_color); ?>"><span class="color1"></span><span class="color2"></span></a></li>
