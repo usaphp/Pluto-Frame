@@ -9,7 +9,7 @@
   if(isset($_SESSION['menu_position'])){
     $menu_position = $_SESSION['menu_position'];
   }else{
-    $menu_position = 'left';
+    $menu_position = 'top';
   }
 
   if(isset($_SESSION['menu_style'])){
