@@ -9,7 +9,7 @@
   if(isset($_SESSION['menu_position'])){
     $menu_position = $_SESSION['menu_position'];
   }else{
-    $menu_position = 'top';
+    $menu_position = 'left';
   }
 
   if(isset($_SESSION['menu_style'])){
@@ -33,7 +33,7 @@
   if(isset($_SESSION['show_featured_posts_on_index'])){
     $show_featured_posts = $_SESSION['show_featured_posts_on_index'];
   }else{
-    $show_featured_posts = "no";
+    $show_featured_posts = "yes";
   }
 
   if(isset($_SESSION['use_fixed_height_index_posts'])){
